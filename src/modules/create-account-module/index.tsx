@@ -19,8 +19,8 @@ const CreateAccountUI: React.FC = () => {
     const {register, handleSubmit, errors, formState} = useForm<CreateAccountProps>({
         resolver: yupResolver(CreateAccountController.MySchema)
     });
-    console.debug("CreateAccountUI is dirty = ", formState.isDirty);
 
+    console.debug("CreateAccountUI is dirty = ", formState.isDirty);
 
     return <PanelVertical>
         <InnerPanelV paddingLeft={50} doubleWidth>
@@ -28,7 +28,7 @@ const CreateAccountUI: React.FC = () => {
             <PanelHorizontal>
                 <span>{t('slogan')}</span>
                 <Spacer width={.5}>.</Spacer>
-                <Link to={"/"}>I already have an account</Link>
+                <Link to={"/"}>{t("already-have-account-text")}</Link>
             </PanelHorizontal>
             <Divider/>
             <CreateAccountForm

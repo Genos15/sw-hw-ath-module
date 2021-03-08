@@ -7,6 +7,7 @@ import {buildKey} from "src/utils/unique-key";
 import {FormControl} from "src/style/FormControl";
 import {LoginButton} from "src/style/LoginButton";
 import CreateAccountController from "src/modules/create-account-module/controller/CreateAccountController";
+import {Link} from "react-router-dom";
 
 const CreateAccountAction: React.FC = () => {
 
@@ -17,7 +18,10 @@ const CreateAccountAction: React.FC = () => {
         <FormControl>
             <Checkbox defaultChecked={checked}
                       onChange={(c, i, e) => CreateAccountController.onCheckTermsAndConditions(c, i, e, setChecked)}
-                      labelText={t('terms-conditions-text') as string}
+                      labelText={<span>
+                          {t('terms-conditions-text')}
+                          <Link to={"/terms-and-conditions"}>SensorKit.ru</Link>
+                      </span>}
                       id={buildKey()}/>
         </FormControl>
         <LoginButton

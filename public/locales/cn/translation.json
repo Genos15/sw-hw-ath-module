@@ -32,11 +32,14 @@
   "phone-text": "拨打电话",
   "phone-placeholder-text": "输入电话号码",
   "phone-format-text": "按照+(国家代码)xxx xx xx的格式",
-  "terms-conditions-text": "我已阅读并理解SensorKit.ru的条款和条件。",
+  "terms-conditions-text": "我已阅读并理解 的条款和条件",
   "required-field-text": "此栏为必填项",
   "invalid-email-field-text": "无效的电子邮件字段",
   "invalid-password-field-text": "密码必须至少有6个符号",
   "invalid-password-field-confirmation-text": "确认的内容必须与密码一致",
+  "already-have-account-text": "我已经有一个账户",
+  "terms-and-condition-text": "条款和条件",
+  "why-collecting-phone-text": "我们收集电话是因为一些原因，有些用户忘记了自己的凭证。通过电话号码，我们可以在系统中为每个用户提供一个唯一的ID。",
   "description": {
     "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
     "part2": "Switch language between english and german using buttons above."

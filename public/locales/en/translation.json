@@ -32,11 +32,14 @@
   "phone-text": "Phone",
   "phone-placeholder-text": "Enter phone number",
   "phone-format-text": "Follow the format +(country-code) xxx xx xx",
-  "terms-conditions-text": "I have read and understood the Terms and Conditions of SensorKit.ru",
+  "terms-conditions-text": "I have read and understood the Terms and Conditions of ",
   "required-field-text": "This field is required",
   "invalid-email-field-text": "Invalid Email field",
   "invalid-password-field-text": "The password must have at least 6 symbols",
   "invalid-password-field-confirmation-text": "The confirmation must match the password",
+  "already-have-account-text": "I already have an account",
+  "terms-and-condition-text": "Terms and Conditions",
+  "why-collecting-phone-text": "We collect phone because for some reasons, some users forget their credentials. Using the phone number we can address a unique ID in the System to each user",
   "description": {
     "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
     "part2": "Switch language between english and german using buttons above."
