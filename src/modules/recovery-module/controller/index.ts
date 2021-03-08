@@ -5,6 +5,8 @@ import {RecoveryAuthFormProps} from "src/model/RecoveryAuthFormProps";
 class RecoveryController {
     private readonly RECOVERY_FIELDS: RecoveryAuthProps = {
         username: 'username',
+        password: 'password',
+        passwordConfirmation: 'passwordConfirmation',
     };
 
     get fields() {
@@ -17,7 +19,15 @@ class RecoveryController {
         });
     }
 
+    get MyRenewPasswordSchema() {
+        return yup.object().shape({
+            password: yup.string().min(6).required(),
+            passwordConfirmation: yup.string().oneOf([yup.ref('password'), null], 'Passwords must match').required(),
+        });
+    }
+
     onSubmit = (data: Partial<RecoveryAuthFormProps>) => {
+        //For Both Password recovery and Renew Password
         if (data)
             alert(JSON.stringify(data));
     }
