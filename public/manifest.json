@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SensorKit",
+  "name": "Create your own flexible Sensor Network",
   "icons": [
     {
       "src": "favicon.ico",
