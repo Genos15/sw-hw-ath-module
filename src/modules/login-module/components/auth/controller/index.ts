@@ -1,6 +1,6 @@
 import * as yup from "yup";
-import {CreateAccountProps} from "src/model/CreateAccountProps";
 import {LoginAuthProps} from "src/model/LoginAuthProps";
+import {LoginAuthFormProps} from "src/model/LoginAuthFormProps";
 
 
 class LoginAuthController {
@@ -21,10 +21,9 @@ class LoginAuthController {
         });
     }
 
-
-    onSubmit = (data: Partial<CreateAccountProps>) => {
-        // if (data)
-        //     alert(JSON.stringify(data));
+    onSubmit = (data: Partial<LoginAuthFormProps>) => {
+        if (data)
+            alert(JSON.stringify(data));
     }
 
     onErrors = (data: any) => {

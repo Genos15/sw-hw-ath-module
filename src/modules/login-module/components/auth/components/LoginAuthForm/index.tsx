@@ -60,5 +60,4 @@ const LoginAuthForm: React.FC<LoginAuthFormProps> = ({register, handleSubmit, er
     </CustomForm>;
 };
 
-
 export default memo<LoginAuthFormProps>(LoginAuthForm);
