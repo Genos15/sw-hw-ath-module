@@ -16,11 +16,9 @@ import CreateAccountForm from "src/modules/create-account-module/components/Crea
 
 const CreateAccountUI: React.FC = () => {
     const {t} = useTranslation(undefined, {useSuspense: false});
-    const {register, handleSubmit, errors, formState} = useForm<CreateAccountProps>({
+    const {register, handleSubmit, errors} = useForm<CreateAccountProps>({
         resolver: yupResolver(CreateAccountController.MySchema)
     });
-
-    console.debug("CreateAccountUI is dirty = ", formState.isDirty);
 
     return <PanelVertical>
         <InnerPanelV paddingLeft={50} doubleWidth>

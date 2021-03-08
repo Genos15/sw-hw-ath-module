@@ -43,7 +43,6 @@ class CreateAccountController {
             alert(JSON.stringify(data));
     }
 
-
     onErrors = (data: any) => {
         // if (data)
         //     alert(JSON.stringify(data));
