@@ -33,6 +33,10 @@
   "phone-placeholder-text": "Enter phone number",
   "phone-format-text": "Follow the format +(country-code) xxx xx xx",
   "terms-conditions-text": "I have read and understood the Terms and Conditions of SensorKit.ru",
+  "required-field-text": "This field is required",
+  "invalid-email-field-text": "Invalid Email field",
+  "invalid-password-field-text": "The password must have at least 6 symbols",
+  "invalid-password-field-confirmation-text": "The confirmation must match the password",
   "description": {
     "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
     "part2": "Switch language between english and german using buttons above."
